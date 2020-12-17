@@ -1,1 +1,8 @@
 langage: java
+
+services:
+  - docker
+
+before_install:
+  - cd docker/dev
+  - docker-compose up
