@@ -148,7 +148,7 @@
       <workItem from="1608219544924" duration="5368000" />
       <workItem from="1608290120072" duration="934000" />
       <workItem from="1608291071929" duration="3655000" />
-      <workItem from="1608300682712" duration="5687000" />
+      <workItem from="1608300682712" duration="6042000" />
     </task>
     <task id="LOCAL-00001" summary="add travis config file">
       <created>1608222058758</created>
@@ -199,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608305738542</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="refactor travis">
+      <created>1608306409931</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1608306409931</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

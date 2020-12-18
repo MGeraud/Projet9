@@ -10,7 +10,7 @@ jdk: openjdk8
 #  - docker-compose up
 
 script:
-  - cd /src
+  - cd src
   - mvn clean test
 
 # after_script:
