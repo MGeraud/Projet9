@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e4d5eb26-7762-4fc5-a8a5-398e157e0414" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myerp-model/src/main/java/com/dummy/myerp/model/bean/comptabilite/EcritureComptable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myerp-model/src/main/java/com/dummy/myerp/model/bean/comptabilite/EcritureComptable.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +150,7 @@
       <workItem from="1608213662668" duration="711000" />
       <workItem from="1608219544924" duration="5368000" />
       <workItem from="1608290120072" duration="934000" />
-      <workItem from="1608291071929" duration="1265000" />
+      <workItem from="1608291071929" duration="2367000" />
     </task>
     <task id="LOCAL-00001" summary="add travis config file">
       <created>1608222058758</created>
@@ -165,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608222645751</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="refactor getTotalCredit to use .getCredit instead of .getDebit">
+      <created>1608292630652</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1608292630652</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,7 +182,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add travis config file" />
     <MESSAGE value="add docker to travis.yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="add docker to travis.yml" />
+    <MESSAGE value="refactor getTotalCredit to use .getCredit instead of .getDebit" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor getTotalCredit to use .getCredit instead of .getDebit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -183,6 +192,11 @@
           <url>file://$PROJECT_DIR$/src/myerp-model/src/test/java/com/dummy/myerp/model/bean/comptabilite/EcritureComptableTest.java</url>
           <line>40</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/myerp-model/src/main/java/com/dummy/myerp/model/bean/comptabilite/EcritureComptable.java</url>
+          <line>116</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

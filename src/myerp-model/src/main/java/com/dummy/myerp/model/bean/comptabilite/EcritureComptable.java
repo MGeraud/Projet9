@@ -111,7 +111,9 @@ public class EcritureComptable {
      * @return boolean
      */
     public boolean isEquilibree() {
-        boolean vRetour = this.getTotalDebit().equals(getTotalCredit());
+        //Utilisation de compareTo à la place de equals pour éviter probleme de longueur après la virgule,
+        // on compare donc que la différence entre les debit et credit soit égale à 0
+        boolean vRetour = this.getTotalDebit().compareTo(getTotalCredit()) == 0 ;
         return vRetour;
     }
 
