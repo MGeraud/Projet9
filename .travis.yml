@@ -6,3 +6,11 @@ services:
 before_install:
   - cd docker/dev
   - docker-compose up
+
+script:
+  - cd ../../src
+  - mvn clean test
+
+after_script:
+  - cd docker/dev
+  - docker-compose stop

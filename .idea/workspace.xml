@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e4d5eb26-7762-4fc5-a8a5-398e157e0414" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +149,7 @@
       <workItem from="1608219544924" duration="5368000" />
       <workItem from="1608290120072" duration="934000" />
       <workItem from="1608291071929" duration="3655000" />
-      <workItem from="1608300682712" duration="3385000" />
+      <workItem from="1608300682712" duration="4220000" />
     </task>
     <task id="LOCAL-00001" summary="add travis config file">
       <created>1608222058758</created>
@@ -178,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608293634802</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add dependencies to jaxb then it works woith jdk 11">
+      <created>1608304256177</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1608304256177</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,7 +197,8 @@
     <MESSAGE value="add docker to travis.yml" />
     <MESSAGE value="refactor getTotalCredit to use .getCredit instead of .getDebit" />
     <MESSAGE value="refactor isEquilibree() use compareTo instead of equals" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor isEquilibree() use compareTo instead of equals" />
+    <MESSAGE value="Add dependencies to jaxb then it works woith jdk 11" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add dependencies to jaxb then it works woith jdk 11" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
