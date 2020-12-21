@@ -2,6 +2,9 @@ langage: java
 
 jdk: openjdk8
 
+env:
+  - CODECOV_TOKEN="a1ebc902-f22d-4073-b49e-b666cbc95538"
+
 # services:
 #  - docker
 
@@ -16,3 +19,6 @@ script:
 # after_script:
 #  - cd docker/dev
 #  - docker-compose stop
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
