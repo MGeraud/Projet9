@@ -75,6 +75,21 @@ public class ComptabiliteManagerImplTest {
     }
 
     @Test(expected = FunctionalException.class)
+    public void checkEcritureComptableUnitRG3_whenOnlyOneLigneEcritureComptable() throws Exception {
+        EcritureComptable vEcritureComptable;
+        vEcritureComptable = new EcritureComptable();
+        vEcritureComptable.setJournal(new JournalComptable("AC", "Achat"));
+        vEcritureComptable.setDate(new Date());
+        vEcritureComptable.setLibelle("Libelle");
+        vEcritureComptable.setReference("AC-2020/12345");
+        vEcritureComptable.getListLigneEcriture().add(new LigneEcritureComptable(new CompteComptable(1),
+                null, new BigDecimal(123),
+                new BigDecimal(123)));
+
+        manager.checkEcritureComptableUnit(vEcritureComptable);
+    }
+
+    @Test(expected = FunctionalException.class)
     public void checkEcritureComptableUnitRG5() throws Exception{
         EcritureComptable vEcritureComptable;
         vEcritureComptable = new EcritureComptable();
