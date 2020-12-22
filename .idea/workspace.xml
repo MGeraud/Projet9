@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4d5eb26-7762-4fc5-a8a5-398e157e0414" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/myerp-model/src/test/java/com/dummy/myerp/model/bean/comptabilite/JournalComptableTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,16 +51,14 @@
       <recent name="com.dummy.myerp.model.bean.comptabilite" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ComptabiliteManagerImplTest.checkEcritureComptableUnitViolation">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.JournalComptableTest.getByCodeNotExisting">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -81,21 +79,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CompteComptableTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="myerp-model" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dummy.myerp.model.bean.comptabilite.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.dummy.myerp.model.bean.comptabilite" />
-      <option name="MAIN_CLASS_NAME" value="com.dummy.myerp.model.bean.comptabilite.CompteComptableTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="EcritureComptableTest.getTotalCredit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myerp-model" />
       <extension name="coverage">
@@ -112,7 +95,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EcritureComptableTest.getTotalDebit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JournalComptableTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myerp-model" />
       <extension name="coverage">
         <pattern>
@@ -121,14 +104,29 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.dummy.myerp.model.bean.comptabilite" />
-      <option name="MAIN_CLASS_NAME" value="com.dummy.myerp.model.bean.comptabilite.EcritureComptableTest" />
-      <option name="METHOD_NAME" value="getTotalDebit" />
+      <option name="MAIN_CLASS_NAME" value="com.dummy.myerp.model.bean.comptabilite.JournalComptableTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JournalComptableTest.getByCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myerp-model" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dummy.myerp.model.bean.comptabilite.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dummy.myerp.model.bean.comptabilite" />
+      <option name="MAIN_CLASS_NAME" value="com.dummy.myerp.model.bean.comptabilite.JournalComptableTest" />
+      <option name="METHOD_NAME" value="getByCode" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EcritureComptableTest.isEquilibree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JournalComptableTest.getByCodeNotExisting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myerp-model" />
       <extension name="coverage">
         <pattern>
@@ -137,8 +135,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.dummy.myerp.model.bean.comptabilite" />
-      <option name="MAIN_CLASS_NAME" value="com.dummy.myerp.model.bean.comptabilite.EcritureComptableTest" />
-      <option name="METHOD_NAME" value="isEquilibree" />
+      <option name="MAIN_CLASS_NAME" value="com.dummy.myerp.model.bean.comptabilite.JournalComptableTest" />
+      <option name="METHOD_NAME" value="getByCodeNotExisting" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -146,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JournalComptableTest.getByCodeNotExisting" />
+        <item itemvalue="JUnit.JournalComptableTest" />
+        <item itemvalue="JUnit.JournalComptableTest.getByCode" />
         <item itemvalue="JUnit.ComptabiliteManagerImplTest.checkEcritureComptableUnitViolation" />
         <item itemvalue="JUnit.EcritureComptableTest.getTotalCredit" />
-        <item itemvalue="JUnit.EcritureComptableTest.getTotalDebit" />
-        <item itemvalue="JUnit.EcritureComptableTest.isEquilibree" />
-        <item itemvalue="JUnit.CompteComptableTest" />
       </list>
     </recent_temporary>
   </component>
@@ -172,7 +170,8 @@
       <workItem from="1608313287969" duration="565000" />
       <workItem from="1608402717474" duration="180000" />
       <workItem from="1608535742865" duration="13362000" />
-      <workItem from="1608561007023" duration="6306000" />
+      <workItem from="1608561007023" duration="7389000" />
+      <workItem from="1608641315726" duration="2377000" />
     </task>
     <task id="LOCAL-00001" summary="add travis config file">
       <created>1608222058758</created>
@@ -265,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608545486278</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add codecov to yaml">
+      <created>1608579285941</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1608579285941</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,7 +290,8 @@
     <MESSAGE value="Add Test to CompteComptable getByNumero() method" />
     <MESSAGE value="Add Test to EcritureComptableTest getTotalDebit() and gettotalCredit() methods. Moved ecritureComptable from isEquilibre() test to @before setUp()." />
     <MESSAGE value="Refactor EcritureComptable regex feet RG_compta_5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor EcritureComptable regex feet RG_compta_5" />
+    <MESSAGE value="add codecov to yaml" />
+    <option name="LAST_COMMIT_MESSAGE" value="add codecov to yaml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
