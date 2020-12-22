@@ -1,6 +1,7 @@
 package com.dummy.myerp.business.impl.manager;
 
 import java.math.BigDecimal;
+import java.util.Calendar;
 import java.util.List;
 import java.util.Set;
 import javax.validation.ConstraintViolation;
@@ -132,8 +133,14 @@ public class ComptabiliteManagerImpl extends AbstractBusinessManager implements 
                 "L'écriture comptable doit avoir au moins deux lignes : une ligne au débit et une ligne au crédit.");
         }
 
-        // TODO ===== RG_Compta_5 : Format et contenu de la référence
+        //  ===== RG_Compta_5 : Format et contenu de la référence
         // vérifier que l'année dans la référence correspond bien à la date de l'écriture, idem pour le code journal...
+        Calendar calendar = Calendar.getInstance(); //utilisation de Calendar car la méthode getYear() de Date est dpréciée
+        calendar.setTime(pEcritureComptable.getDate());
+        if (!pEcritureComptable.getReference()
+                .startsWith(pEcritureComptable.getJournal().getCode() + "-" + calendar.get(Calendar.YEAR))){
+            throw new FunctionalException("La référence d'une écriture comptable doit être de la forme XX-AAAA/####, XX étant le code journal et AAAA l'année de l'écriture comptable");
+        }
     }
 
 
