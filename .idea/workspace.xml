@@ -5,9 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4d5eb26-7762-4fc5-a8a5-398e157e0414" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/myerp-business/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/myerp-business/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/myerp-business/myerp-business.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/myerp-consumer/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/myerp-consumer/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/myerp-consumer/myerp-consumer.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/myerp-model/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/myerp-model/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/myerp-model/myerp-model.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/myerp-technical/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/myerp-technical/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/myerp-technical/myerp-technical.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/myerp.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/myerp-business/src/main/java/com/dummy/myerp/business/impl/manager/ComptabiliteManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myerp-business/src/main/java/com/dummy/myerp/business/impl/manager/ComptabiliteManagerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myerp-business/src/test/java/com/dummy/myerp/business/impl/manager/ComptabiliteManagerImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myerp-business/src/test/java/com/dummy/myerp/business/impl/manager/ComptabiliteManagerImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,17 +72,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.ComptabiliteManagerImplTest.checkEcritureComptableUnitRG3_whenOnlyOneLigneEcritureComptable">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ComptabiliteManagerImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myerp-business" />
       <extension name="coverage">
@@ -172,7 +180,9 @@
       <workItem from="1608402717474" duration="180000" />
       <workItem from="1608535742865" duration="13362000" />
       <workItem from="1608561007023" duration="7389000" />
-      <workItem from="1608641315726" duration="6990000" />
+      <workItem from="1608641315726" duration="9033000" />
+      <workItem from="1608652546985" duration="391000" />
+      <workItem from="1608751830994" duration="305000" />
     </task>
     <task id="LOCAL-00001" summary="add travis config file">
       <created>1608222058758</created>
@@ -286,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608649469563</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Add UnitTest to ComptabiliteManagerImpl for RG3 rule , when therre's only 1 LigneEcritureComptable">
+      <created>1608649624284</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1608649624284</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -308,16 +325,12 @@
     <MESSAGE value="add codecov to yaml" />
     <MESSAGE value="Add UnitTest for JournalComptable" />
     <MESSAGE value="Add UnitTest to ComptabiliteManagerImpl for RG5 rule then add code to throw Exception on rule RG5 not respected" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add UnitTest to ComptabiliteManagerImpl for RG5 rule then add code to throw Exception on rule RG5 not respected" />
+    <MESSAGE value="Add UnitTest to ComptabiliteManagerImpl for RG3 rule , when therre's only 1 LigneEcritureComptable" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add UnitTest to ComptabiliteManagerImpl for RG3 rule , when therre's only 1 LigneEcritureComptable" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/myerp-business/src/main/java/com/dummy/myerp/business/impl/manager/ComptabiliteManagerImpl.java</url>
-          <line>106</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/myerp-model/src/test/java/com/dummy/myerp/model/bean/comptabilite/CompteComptableTest.java</url>
           <line>20</line>
