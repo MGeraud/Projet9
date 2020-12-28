@@ -5,28 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4d5eb26-7762-4fc5-a8a5-398e157e0414" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/myerp-business/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/myerp-business/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/myerp-business/myerp-business.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/myerp-consumer/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/myerp-consumer/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/myerp-consumer/myerp-consumer.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/myerp-model/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/myerp-model/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/myerp-model/myerp-model.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/myerp-technical/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/myerp-technical/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/myerp-technical/myerp-technical.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/myerp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/myerp-business/src/test-business/resources/com/dummy/myerp/testbusiness/business/bootstrapContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myerp-business/myerp-business.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/myerp-business/myerp-business.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/myerp-business/src/main/java/com/dummy/myerp/business/impl/manager/ComptabiliteManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myerp-business/src/main/java/com/dummy/myerp/business/impl/manager/ComptabiliteManagerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myerp-consumer/src/main/resources/com/dummy/myerp/consumer/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/myerp-consumer/src/main/resources/com/dummy/myerp/consumer/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit4 Test Class" />
+        <option value="spring-beans.schema" />
       </list>
     </option>
   </component>
@@ -55,7 +40,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../projet_B4_FR/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/myerp-business/src/test-business" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.11820328" />
@@ -64,14 +49,31 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/myerp-business/src/test-business" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/myerp-business/src/test-business/resources/com/dummy/myerp/testbusiness" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.dummy.myerp.model.bean.comptabilite" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.ComptabiliteManagerImplTest.checkEcritureComptableUnitRG3_whenOnlyOneLigneEcritureComptable">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ComptabiliteManagerImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myerp-business" />
       <extension name="coverage">
@@ -182,7 +184,9 @@
       <workItem from="1608561007023" duration="7389000" />
       <workItem from="1608641315726" duration="9033000" />
       <workItem from="1608652546985" duration="391000" />
-      <workItem from="1608751830994" duration="305000" />
+      <workItem from="1608751830994" duration="476000" />
+      <workItem from="1609075458421" duration="1702000" />
+      <workItem from="1609176299979" duration="5901000" />
     </task>
     <task id="LOCAL-00001" summary="add travis config file">
       <created>1608222058758</created>
@@ -303,7 +307,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608649624284</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Add IDEs files for remote work">
+      <created>1608752176189</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1608752176190</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,7 +337,8 @@
     <MESSAGE value="Add UnitTest for JournalComptable" />
     <MESSAGE value="Add UnitTest to ComptabiliteManagerImpl for RG5 rule then add code to throw Exception on rule RG5 not respected" />
     <MESSAGE value="Add UnitTest to ComptabiliteManagerImpl for RG3 rule , when therre's only 1 LigneEcritureComptable" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add UnitTest to ComptabiliteManagerImpl for RG3 rule , when therre's only 1 LigneEcritureComptable" />
+    <MESSAGE value="Add IDEs files for remote work" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add IDEs files for remote work" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
