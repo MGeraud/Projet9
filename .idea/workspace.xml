@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e4d5eb26-7762-4fc5-a8a5-398e157e0414" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myerp-consumer/src/test-consumer/java/com/dummy/myerp/consumer/dao/impl/db/dao/ComptabiliteDaoImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myerp-consumer/src/test-consumer/java/com/dummy/myerp/consumer/dao/impl/db/dao/ComptabiliteDaoImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,19 +61,21 @@
       <recent name="com.dummy.myerp.model.bean.comptabilite" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ComptabiliteManagerImplTest">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ComptabiliteDaoImplTest.getEcritureComptableByRefNotFound">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ComptabiliteDaoImplTest.getListCompteComptable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ComptabiliteDaoImplTest.getEcritureComptable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myerp-consumer" />
       <extension name="coverage">
         <pattern>
@@ -83,80 +85,83 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.dummy.myerp.consumer.dao.impl.db.dao" />
       <option name="MAIN_CLASS_NAME" value="com.dummy.myerp.consumer.dao.impl.db.dao.ComptabiliteDaoImplTest" />
-      <option name="METHOD_NAME" value="getListCompteComptable" />
+      <option name="METHOD_NAME" value="getEcritureComptable" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ComptabiliteManagerImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="myerp-business" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dummy.myerp.business.impl.manager.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.dummy.myerp.business.impl.manager" />
-      <option name="MAIN_CLASS_NAME" value="com.dummy.myerp.business.impl.manager.ComptabiliteManagerImplTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ComptabiliteManagerImplTest.checkEcritureComptableUnit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="myerp-business" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dummy.myerp.business.impl.manager.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.dummy.myerp.business.impl.manager" />
-      <option name="MAIN_CLASS_NAME" value="com.dummy.myerp.business.impl.manager.ComptabiliteManagerImplTest" />
-      <option name="METHOD_NAME" value="checkEcritureComptableUnit" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestInitSpring (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="myerp-business" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dummy.myerp.testbusiness.business.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.dummy.myerp.testbusiness.business" />
-      <option name="MAIN_CLASS_NAME" value="com.dummy.myerp.testbusiness.business.TestInitSpring" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestInitSpring" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ComptabiliteDaoImplTest.getEcritureComptableByIdNotFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myerp-consumer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dummy.myerp.testconsumer.consumer.*" />
+          <option name="PATTERN" value="com.dummy.myerp.consumer.dao.impl.db.dao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.dummy.myerp.testconsumer.consumer" />
-      <option name="MAIN_CLASS_NAME" value="com.dummy.myerp.testconsumer.consumer.TestInitSpring" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.dummy.myerp.consumer.dao.impl.db.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.dummy.myerp.consumer.dao.impl.db.dao.ComptabiliteDaoImplTest" />
+      <option name="METHOD_NAME" value="getEcritureComptableByIdNotFound" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ComptabiliteDaoImplTest.getEcritureComptableByRef" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myerp-consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dummy.myerp.consumer.dao.impl.db.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dummy.myerp.consumer.dao.impl.db.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.dummy.myerp.consumer.dao.impl.db.dao.ComptabiliteDaoImplTest" />
+      <option name="METHOD_NAME" value="getEcritureComptableByRef" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ComptabiliteDaoImplTest.getEcritureComptableByRefNotFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myerp-consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dummy.myerp.consumer.dao.impl.db.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dummy.myerp.consumer.dao.impl.db.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.dummy.myerp.consumer.dao.impl.db.dao.ComptabiliteDaoImplTest" />
+      <option name="METHOD_NAME" value="getEcritureComptableByRefNotFound" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ComptabiliteDaoImplTest.getListEcritureComptable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myerp-consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dummy.myerp.consumer.dao.impl.db.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dummy.myerp.consumer.dao.impl.db.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.dummy.myerp.consumer.dao.impl.db.dao.ComptabiliteDaoImplTest" />
+      <option name="METHOD_NAME" value="getListEcritureComptable" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ComptabiliteManagerImplTest" />
-        <item itemvalue="JUnit.ComptabiliteManagerImplTest.checkEcritureComptableUnit" />
-        <item itemvalue="JUnit.ComptabiliteDaoImplTest.getListCompteComptable" />
-        <item itemvalue="JUnit.TestInitSpring (1)" />
-        <item itemvalue="JUnit.TestInitSpring" />
+        <item itemvalue="JUnit.ComptabiliteDaoImplTest.getEcritureComptableByRefNotFound" />
+        <item itemvalue="JUnit.ComptabiliteDaoImplTest.getEcritureComptableByRef" />
+        <item itemvalue="JUnit.ComptabiliteDaoImplTest.getEcritureComptableByIdNotFound" />
+        <item itemvalue="JUnit.ComptabiliteDaoImplTest.getEcritureComptable" />
+        <item itemvalue="JUnit.ComptabiliteDaoImplTest.getListEcritureComptable" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +190,8 @@
       <workItem from="1609075458421" duration="1702000" />
       <workItem from="1609176299979" duration="6158000" />
       <workItem from="1609272984701" duration="128000" />
-      <workItem from="1609579231828" duration="5424000" />
+      <workItem from="1609579231828" duration="6872000" />
+      <workItem from="1609908172855" duration="1338000" />
     </task>
     <task id="LOCAL-00001" summary="add travis config file">
       <created>1608222058758</created>
@@ -327,7 +333,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609584344344</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="refactor travis.yml to use docker for integration test">
+      <created>1609584805242</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1609584805242</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -353,7 +366,8 @@
     <MESSAGE value="Add IDEs files for remote work" />
     <MESSAGE value="Add bootstrap.xml to run Integration Tests . Add database to consumer application context" />
     <MESSAGE value="Refactor ComptabiliteManagerImplTest to get current year instad of hard coded year.&#10;Add base for consumer integration test : bootstrapContext, ConsumerTestCase , SpringRegistry and TestInitSpring (keep same schema as business package)&#10;Add first integration test for ComptabiliteManagerImpl" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor ComptabiliteManagerImplTest to get current year instad of hard coded year.&#10;Add base for consumer integration test : bootstrapContext, ConsumerTestCase , SpringRegistry and TestInitSpring (keep same schema as business package)&#10;Add first integration test for ComptabiliteManagerImpl" />
+    <MESSAGE value="refactor travis.yml to use docker for integration test" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor travis.yml to use docker for integration test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -365,8 +379,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/myerp-consumer/src/test-consumer/java/com/dummy/myerp/consumer/dao/impl/db/dao/ComptabiliteDaoImplTest.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="6" />
+          <line>27</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
