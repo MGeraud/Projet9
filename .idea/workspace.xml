@@ -61,21 +61,19 @@
       <recent name="com.dummy.myerp.model.bean.comptabilite" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ComptabiliteDaoImplTest.getEcritureComptableByRefNotFound">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ComptabiliteDaoImplTest.deleteEcritureComptable">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ComptabiliteDaoImplTest.getEcritureComptable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ComptabiliteDaoImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myerp-consumer" />
       <extension name="coverage">
         <pattern>
@@ -85,13 +83,12 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.dummy.myerp.consumer.dao.impl.db.dao" />
       <option name="MAIN_CLASS_NAME" value="com.dummy.myerp.consumer.dao.impl.db.dao.ComptabiliteDaoImplTest" />
-      <option name="METHOD_NAME" value="getEcritureComptable" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ComptabiliteDaoImplTest.getEcritureComptableByIdNotFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ComptabiliteDaoImplTest.deleteEcritureComptable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myerp-consumer" />
       <extension name="coverage">
         <pattern>
@@ -101,7 +98,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.dummy.myerp.consumer.dao.impl.db.dao" />
       <option name="MAIN_CLASS_NAME" value="com.dummy.myerp.consumer.dao.impl.db.dao.ComptabiliteDaoImplTest" />
-      <option name="METHOD_NAME" value="getEcritureComptableByIdNotFound" />
+      <option name="METHOD_NAME" value="deleteEcritureComptable" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -139,7 +136,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ComptabiliteDaoImplTest.getListEcritureComptable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ComptabiliteDaoImplTest.updateEcritureComptable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myerp-consumer" />
       <extension name="coverage">
         <pattern>
@@ -149,7 +146,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.dummy.myerp.consumer.dao.impl.db.dao" />
       <option name="MAIN_CLASS_NAME" value="com.dummy.myerp.consumer.dao.impl.db.dao.ComptabiliteDaoImplTest" />
-      <option name="METHOD_NAME" value="getListEcritureComptable" />
+      <option name="METHOD_NAME" value="updateEcritureComptable" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -157,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ComptabiliteDaoImplTest.deleteEcritureComptable" />
+        <item itemvalue="JUnit.ComptabiliteDaoImplTest.updateEcritureComptable" />
+        <item itemvalue="JUnit.ComptabiliteDaoImplTest" />
         <item itemvalue="JUnit.ComptabiliteDaoImplTest.getEcritureComptableByRefNotFound" />
         <item itemvalue="JUnit.ComptabiliteDaoImplTest.getEcritureComptableByRef" />
-        <item itemvalue="JUnit.ComptabiliteDaoImplTest.getEcritureComptableByIdNotFound" />
-        <item itemvalue="JUnit.ComptabiliteDaoImplTest.getEcritureComptable" />
-        <item itemvalue="JUnit.ComptabiliteDaoImplTest.getListEcritureComptable" />
       </list>
     </recent_temporary>
   </component>
@@ -191,7 +188,9 @@
       <workItem from="1609176299979" duration="6158000" />
       <workItem from="1609272984701" duration="128000" />
       <workItem from="1609579231828" duration="6872000" />
-      <workItem from="1609908172855" duration="1338000" />
+      <workItem from="1609908172855" duration="2266000" />
+      <workItem from="1609910864931" duration="37000" />
+      <workItem from="1610028772615" duration="3104000" />
     </task>
     <task id="LOCAL-00001" summary="add travis config file">
       <created>1608222058758</created>
@@ -340,7 +339,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609584805242</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Add tests to ComptabiliteDaoImplTest">
+      <created>1609909536452</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1609909536452</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,7 +373,8 @@
     <MESSAGE value="Add bootstrap.xml to run Integration Tests . Add database to consumer application context" />
     <MESSAGE value="Refactor ComptabiliteManagerImplTest to get current year instad of hard coded year.&#10;Add base for consumer integration test : bootstrapContext, ConsumerTestCase , SpringRegistry and TestInitSpring (keep same schema as business package)&#10;Add first integration test for ComptabiliteManagerImpl" />
     <MESSAGE value="refactor travis.yml to use docker for integration test" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor travis.yml to use docker for integration test" />
+    <MESSAGE value="Add tests to ComptabiliteDaoImplTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add tests to ComptabiliteDaoImplTest" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -376,11 +383,6 @@
           <url>file://$PROJECT_DIR$/src/myerp-model/src/test/java/com/dummy/myerp/model/bean/comptabilite/CompteComptableTest.java</url>
           <line>20</line>
           <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/myerp-consumer/src/test-consumer/java/com/dummy/myerp/consumer/dao/impl/db/dao/ComptabiliteDaoImplTest.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
