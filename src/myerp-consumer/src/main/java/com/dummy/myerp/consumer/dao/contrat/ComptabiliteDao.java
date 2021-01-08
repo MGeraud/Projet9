@@ -70,11 +70,23 @@ public interface ComptabiliteDao {
     void insertEcritureComptable(EcritureComptable pEcritureComptable);
 
     /**
+     * Insert une nouvelle sequence d'écriture comptable
+     * @param pSequenceEcritureComptable
+     */
+    void insertSequenceEcritureComptable(SequenceEcritureComptable pSequenceEcritureComptable);
+
+    /**
      * Met à jour l'écriture comptable.
      *
      * @param pEcritureComptable -
      */
     void updateEcritureComptable(EcritureComptable pEcritureComptable);
+
+    /**
+     * Met à jour la séquence d'écriture comptable
+     * @param pSequenceEcritureComptable
+     */
+    void updateSequenceEcritureComptable(SequenceEcritureComptable pSequenceEcritureComptable);
 
     /**
      * Supprime l'écriture comptable d'id {@code pId}.
@@ -92,4 +104,5 @@ public interface ComptabiliteDao {
      * @throws NotFoundException
      */
     SequenceEcritureComptable getSequenceEcriturecomptableByAnneeAndJournal(Integer pAnnee , String pjournalCode) throws NotFoundException;
+
 }

@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4d5eb26-7762-4fc5-a8a5-398e157e0414" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/myerp-consumer/src/main/java/com/dummy/myerp/consumer/dao/impl/db/rowmapper/comptabilite/SequenceEcriturecomptableRM.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myerp-business/src/main/java/com/dummy/myerp/business/contrat/manager/ComptabiliteManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myerp-business/src/main/java/com/dummy/myerp/business/contrat/manager/ComptabiliteManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/myerp-business/src/main/java/com/dummy/myerp/business/impl/manager/ComptabiliteManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myerp-business/src/main/java/com/dummy/myerp/business/impl/manager/ComptabiliteManagerImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/myerp-consumer/src/main/java/com/dummy/myerp/consumer/dao/contrat/ComptabiliteDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myerp-consumer/src/main/java/com/dummy/myerp/consumer/dao/contrat/ComptabiliteDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/myerp-consumer/src/main/java/com/dummy/myerp/consumer/dao/impl/db/dao/ComptabiliteDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myerp-consumer/src/main/java/com/dummy/myerp/consumer/dao/impl/db/dao/ComptabiliteDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/myerp-consumer/src/main/resources/com/dummy/myerp/consumer/sqlContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/myerp-consumer/src/main/resources/com/dummy/myerp/consumer/sqlContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/myerp-consumer/src/test-consumer/java/com/dummy/myerp/consumer/dao/impl/db/dao/ComptabiliteDaoImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myerp-consumer/src/test-consumer/java/com/dummy/myerp/consumer/dao/impl/db/dao/ComptabiliteDaoImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myerp-model/src/main/java/com/dummy/myerp/model/bean/comptabilite/SequenceEcritureComptable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myerp-model/src/main/java/com/dummy/myerp/model/bean/comptabilite/SequenceEcritureComptable.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,29 +67,16 @@
       <recent name="com.dummy.myerp.model.bean.comptabilite" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ComptabiliteDaoImplTest.getSequenceEcriturecomptableByAnneeAndJournalNotFound">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ComptabiliteDaoImplTest.updateSequenceEcritureComptable">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ComptabiliteDaoImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="myerp-consumer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dummy.myerp.consumer.dao.impl.db.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.dummy.myerp.consumer.dao.impl.db.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.dummy.myerp.consumer.dao.impl.db.dao.ComptabiliteDaoImplTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -143,7 +129,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ComptabiliteDaoImplTest.updateEcritureComptable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ComptabiliteDaoImplTest.insertSequenceEcritureComptable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myerp-consumer" />
       <extension name="coverage">
         <pattern>
@@ -153,7 +139,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.dummy.myerp.consumer.dao.impl.db.dao" />
       <option name="MAIN_CLASS_NAME" value="com.dummy.myerp.consumer.dao.impl.db.dao.ComptabiliteDaoImplTest" />
-      <option name="METHOD_NAME" value="updateEcritureComptable" />
+      <option name="METHOD_NAME" value="insertSequenceEcritureComptable" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ComptabiliteDaoImplTest.updateSequenceEcritureComptable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myerp-consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dummy.myerp.consumer.dao.impl.db.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dummy.myerp.consumer.dao.impl.db.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.dummy.myerp.consumer.dao.impl.db.dao.ComptabiliteDaoImplTest" />
+      <option name="METHOD_NAME" value="updateSequenceEcritureComptable" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -161,11 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ComptabiliteDaoImplTest.updateSequenceEcritureComptable" />
+        <item itemvalue="JUnit.ComptabiliteDaoImplTest.insertSequenceEcritureComptable" />
         <item itemvalue="JUnit.ComptabiliteDaoImplTest.getSequenceEcriturecomptableByAnneeAndJournalNotFound" />
         <item itemvalue="JUnit.ComptabiliteDaoImplTest.getSequenceEcriturecomptableByAnneeAndJournal" />
         <item itemvalue="JUnit.ComptabiliteDaoImplTest.deleteEcritureComptable" />
-        <item itemvalue="JUnit.ComptabiliteDaoImplTest.updateEcritureComptable" />
-        <item itemvalue="JUnit.ComptabiliteDaoImplTest" />
       </list>
     </recent_temporary>
   </component>
@@ -199,7 +201,8 @@
       <workItem from="1609910864931" duration="37000" />
       <workItem from="1610028772615" duration="4059000" />
       <workItem from="1610033229432" duration="3241000" />
-      <workItem from="1610098027881" duration="6069000" />
+      <workItem from="1610098027881" duration="7324000" />
+      <workItem from="1610122270633" duration="6125000" />
     </task>
     <task id="LOCAL-00001" summary="add travis config file">
       <created>1608222058758</created>
@@ -362,7 +365,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610032055461</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Add methods to get SequenceEcritureComptable by year and journal_code from Database.&#10;Add Integration Test for theses methods">
+      <created>1610106194654</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1610106194654</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -391,7 +401,8 @@
     <MESSAGE value="refactor travis.yml to use docker for integration test" />
     <MESSAGE value="Add tests to ComptabiliteDaoImplTest" />
     <MESSAGE value="Add INSERT/UPDATE/DELETE tests to ComptabiliteDaoImplTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add INSERT/UPDATE/DELETE tests to ComptabiliteDaoImplTest" />
+    <MESSAGE value="Add methods to get SequenceEcritureComptable by year and journal_code from Database.&#10;Add Integration Test for theses methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add methods to get SequenceEcritureComptable by year and journal_code from Database.&#10;Add Integration Test for theses methods" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

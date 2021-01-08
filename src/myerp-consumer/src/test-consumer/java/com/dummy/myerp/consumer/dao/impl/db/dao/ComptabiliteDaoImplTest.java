@@ -18,6 +18,7 @@ public class ComptabiliteDaoImplTest extends ConsumerTestCase {
 
 
     private EcritureComptable ecritureComptable;
+    private SequenceEcritureComptable sequenceEcritureComptable;
 
     @Before
     public void setUp(){
@@ -27,6 +28,11 @@ public class ComptabiliteDaoImplTest extends ConsumerTestCase {
         ecritureComptable.setReference("AC-2019/00001");
         ecritureComptable.setJournal(new JournalComptable("AC" , "Achat"));
         ecritureComptable.setDate(new Date());
+
+        sequenceEcritureComptable = new SequenceEcritureComptable();
+        sequenceEcritureComptable.setJournalCode("AC");
+        sequenceEcritureComptable.setAnnee(2019);
+        sequenceEcritureComptable.setDerniereValeur(25);
     }
 
     @Test
@@ -100,5 +106,25 @@ public class ComptabiliteDaoImplTest extends ConsumerTestCase {
     @Test(expected = NotFoundException.class)
     public void getSequenceEcriturecomptableByAnneeAndJournalNotFound() throws NotFoundException {
         getDaoProxy().getComptabiliteDao().getSequenceEcriturecomptableByAnneeAndJournal(2018,"VV");
+    }
+
+    @Test
+    public void insertSequenceEcritureComptable() throws NotFoundException {
+
+        getDaoProxy().getComptabiliteDao().insertSequenceEcritureComptable(sequenceEcritureComptable);
+
+        assertEquals(sequenceEcritureComptable.toString()
+                , getDaoProxy().getComptabiliteDao().getSequenceEcriturecomptableByAnneeAndJournal(2019 , "AC").toString());
+    }
+
+    @Test
+    public void updateSequenceEcritureComptable() throws NotFoundException {
+        SequenceEcritureComptable toUpdate = sequenceEcritureComptable;
+        toUpdate.setDerniereValeur(1522);
+        getDaoProxy().getComptabiliteDao().updateSequenceEcritureComptable(toUpdate);
+
+        assertEquals((Integer)1522 ,getDaoProxy().getComptabiliteDao()
+                .getSequenceEcriturecomptableByAnneeAndJournal(sequenceEcritureComptable.getAnnee() , sequenceEcritureComptable.getJournalCode())
+                .getDerniereValeur());
     }
 }
