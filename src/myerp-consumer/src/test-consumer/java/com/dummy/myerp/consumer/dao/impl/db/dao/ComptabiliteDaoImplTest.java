@@ -3,15 +3,12 @@ package com.dummy.myerp.consumer.dao.impl.db.dao;
 import com.dummy.myerp.model.bean.comptabilite.CompteComptable;
 import com.dummy.myerp.model.bean.comptabilite.EcritureComptable;
 import com.dummy.myerp.model.bean.comptabilite.JournalComptable;
-import com.dummy.myerp.model.bean.comptabilite.LigneEcritureComptable;
+import com.dummy.myerp.model.bean.comptabilite.SequenceEcritureComptable;
 import com.dummy.myerp.technical.exception.NotFoundException;
 import com.dummy.myerp.testconsumer.consumer.ConsumerTestCase;
-import org.apache.commons.lang3.ObjectUtils;
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
 
@@ -91,5 +88,17 @@ public class ComptabiliteDaoImplTest extends ConsumerTestCase {
     public void deleteEcritureComptable() throws NotFoundException {
         getDaoProxy().getComptabiliteDao().deleteEcritureComptable(1);
         getDaoProxy().getComptabiliteDao().getEcritureComptable(1);
+    }
+
+    @Test
+    public void getSequenceEcriturecomptableByAnneeAndJournal() throws NotFoundException {
+        SequenceEcritureComptable sequenceEcritureComptable = getDaoProxy().getComptabiliteDao().getSequenceEcriturecomptableByAnneeAndJournal(2016,"AC");
+        assertNotNull(sequenceEcritureComptable);
+        assertEquals((Integer) 40, sequenceEcritureComptable.getDerniereValeur());
+    }
+
+    @Test(expected = NotFoundException.class)
+    public void getSequenceEcriturecomptableByAnneeAndJournalNotFound() throws NotFoundException {
+        getDaoProxy().getComptabiliteDao().getSequenceEcriturecomptableByAnneeAndJournal(2018,"VV");
     }
 }
