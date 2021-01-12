@@ -58,10 +58,20 @@ public class ComptabiliteManagerImplIntegrationTest extends BusinessTestCase{
     @Test
     public void checkEcritureComptableContext() throws FunctionalException{
 
-        Date date2019  = new GregorianCalendar(2019,5,12,5,30,10).getTime();
-        ecritureComptable.setDate(date2019);
-        ecritureComptable.setReference("AC-2019/00001");
+        EcritureComptable vecritureComptable = new EcritureComptable();
+        Date date2019  = new GregorianCalendar(2020,5,12,5,30,10).getTime();
+        vecritureComptable = new EcritureComptable();
+        vecritureComptable.setLibelle("libellé");
+        vecritureComptable.setReference("AC-2020/00001");
+        vecritureComptable.setJournal(new JournalComptable("AC" , "Achat"));
+        vecritureComptable.setDate(date2019);
+        vecritureComptable.getListLigneEcriture().add(new LigneEcritureComptable(new CompteComptable(1),
+                null, new BigDecimal(123),
+                null));
+        vecritureComptable.getListLigneEcriture().add(new LigneEcritureComptable(new CompteComptable(2),
+                null, null,
+                new BigDecimal(123)));
 
-        manager.checkEcritureComptable(ecritureComptable);
+        manager.checkEcritureComptable(vecritureComptable);
     }
 }

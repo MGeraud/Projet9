@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4d5eb26-7762-4fc5-a8a5-398e157e0414" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myerp-business/myerp-business.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/myerp-business/myerp-business.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myerp-business/src/test-business/java/com/dummy/myerp/testbusiness/business/ComptabiliteManagerImplIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myerp-business/src/test-business/java/com/dummy/myerp/testbusiness/business/ComptabiliteManagerImplIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myerp-business/src/test-business/java/com/dummy/myerp/testbusiness/business/ComptabiliteManagerImplIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myerp-business/src/test-business/java/com/dummy/myerp/testbusiness/business/ComptabiliteManagerImplIntegrationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +61,7 @@
       <recent name="com.dummy.myerp.model.bean.comptabilite" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ComptabiliteManagerImplIntegrationTest">
+  <component name="RunManager" selected="JUnit.ComptabiliteManagerImplIntegrationTest.checkEcritureComptableContext">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -156,8 +154,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ComptabiliteManagerImplIntegrationTest" />
         <item itemvalue="JUnit.ComptabiliteManagerImplIntegrationTest.checkEcritureComptableContext" />
+        <item itemvalue="JUnit.ComptabiliteManagerImplIntegrationTest" />
         <item itemvalue="JUnit.ComptabiliteManagerImplIntegrationTest.checkEcritureComptableContextwithDifferentIdOnSameReference" />
         <item itemvalue="JUnit.ComptabiliteManagerImplIntegrationTest.checkEcritureComptableContextwithIdNull" />
         <item itemvalue="JUnit.ComptabiliteManagerImplTest.checkEcritureComptableUnit" />
@@ -197,7 +195,7 @@
       <workItem from="1610098027881" duration="7324000" />
       <workItem from="1610122270633" duration="8129000" />
       <workItem from="1610440867211" duration="478000" />
-      <workItem from="1610441361841" duration="5163000" />
+      <workItem from="1610441361841" duration="5836000" />
     </task>
     <task id="LOCAL-00001" summary="add travis config file">
       <created>1608222058758</created>
@@ -381,14 +379,20 @@
       <option name="project" value="LOCAL" />
       <updated>1610459631231</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Refactor ComptabiliteManagerImplIntegrationTest.java">
+      <created>1610460436874</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1610460436874</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add travis config file" />
     <MESSAGE value="add docker to travis.yml" />
     <MESSAGE value="refactor getTotalCredit to use .getCredit instead of .getDebit" />
     <MESSAGE value="refactor isEquilibree() use compareTo instead of equals" />
@@ -413,7 +417,8 @@
     <MESSAGE value="Add methods to get SequenceEcritureComptable by year and journal_code from Database.&#10;Add Integration Test for theses methods" />
     <MESSAGE value="Add methods to insert and update SequenceEcritureComptable&#10;Implement addReference() method" />
     <MESSAGE value="Add integration test method checkEcritureComptable with exception on RG6 (id null and id != from the one on database)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add integration test method checkEcritureComptable with exception on RG6 (id null and id != from the one on database)" />
+    <MESSAGE value="Refactor ComptabiliteManagerImplIntegrationTest.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor ComptabiliteManagerImplIntegrationTest.java" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
