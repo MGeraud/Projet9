@@ -127,4 +127,26 @@ public class ComptabiliteManagerImplIntegrationTest extends BusinessTestCase{
         manager.deleteEcritureComptable(1);
         getDaoProxy().getComptabiliteDao().getEcritureComptable(1);
     }
+
+    @Test
+    public void addReference() throws NotFoundException {
+        String actualEcritureComptableReference = ecritureComptable.getReference();
+        SequenceEcritureComptable vSequenceEcritureComptable = getDaoProxy().getComptabiliteDao()
+                .getSequenceEcriturecomptableByAnneeAndJournal(2016, ecritureComptable.getJournal().getCode());
+        manager.addReference(ecritureComptable);
+        assertNotEquals( actualEcritureComptableReference, ecritureComptable.getReference());
+        assertEquals(java.util.Optional.of(vSequenceEcritureComptable.getDerniereValeur() + 1).get(), getDaoProxy().getComptabiliteDao().getSequenceEcriturecomptableByAnneeAndJournal(2016, ecritureComptable.getJournal().getCode()).getDerniereValeur());
+    }
+
+    @Test
+    public void addReferenceWithNotKnownAnnee() throws NotFoundException {
+        Date date  = new GregorianCalendar(1952,5,12,5,30,10).getTime();
+        ecritureComptable.setDate(date);
+        manager.addReference(ecritureComptable);
+        SequenceEcritureComptable sequenceExpected = getDaoProxy().getComptabiliteDao()
+                .getSequenceEcriturecomptableByAnneeAndJournal(1952, ecritureComptable.getJournal().getCode());
+        assertNotNull(sequenceExpected);
+        assertEquals(java.util.Optional.of(1).get(),sequenceExpected.getDerniereValeur());
+        assertEquals(ecritureComptable.getJournal().getCode() + "-" + 1952 + "/00001" , ecritureComptable.getReference());
+    }
 }
