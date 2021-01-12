@@ -3,7 +3,9 @@ package com.dummy.myerp.testbusiness.business;
 import com.dummy.myerp.business.impl.manager.ComptabiliteManagerImpl;
 import com.dummy.myerp.model.bean.comptabilite.*;
 import com.dummy.myerp.technical.exception.FunctionalException;
+import com.dummy.myerp.technical.exception.NotFoundException;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
@@ -12,12 +14,14 @@ import java.math.BigDecimal;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
-import static org.junit.Assert.assertFalse;
+import static com.dummy.myerp.consumer.ConsumerHelper.getDaoProxy;
+import static org.junit.Assert.*;
 
 public class ComptabiliteManagerImplIntegrationTest extends BusinessTestCase{
 
     private ComptabiliteManagerImpl manager = new ComptabiliteManagerImpl();
     private EcritureComptable ecritureComptable;
+    private EcritureComptable vecritureComptable = new EcritureComptable();
 
     @Rule
     public ExpectedException expectedException = ExpectedException.none();
@@ -36,6 +40,20 @@ public class ComptabiliteManagerImplIntegrationTest extends BusinessTestCase{
                 null, new BigDecimal(123),
                 null));
         ecritureComptable.getListLigneEcriture().add(new LigneEcritureComptable(new CompteComptable(2),
+                null, null,
+                new BigDecimal(123)));
+
+        Date date2019  = new GregorianCalendar(2020,5,12,5,30,10).getTime();
+        vecritureComptable = new EcritureComptable();
+        vecritureComptable.setId(1);
+        vecritureComptable.setLibelle("libellé");
+        vecritureComptable.setReference("AC-2020/00001");
+        vecritureComptable.setJournal(new JournalComptable("AC" , "Achat"));
+        vecritureComptable.setDate(date2019);
+        vecritureComptable.getListLigneEcriture().add(new LigneEcritureComptable(new CompteComptable(401),
+                null, new BigDecimal(123),
+                null));
+        vecritureComptable.getListLigneEcriture().add(new LigneEcritureComptable(new CompteComptable(411),
                 null, null,
                 new BigDecimal(123)));
     }
@@ -59,21 +77,6 @@ public class ComptabiliteManagerImplIntegrationTest extends BusinessTestCase{
 
     @Test
     public void checkEcritureComptableContext() throws FunctionalException{
-
-        EcritureComptable vecritureComptable = new EcritureComptable();
-        Date date2019  = new GregorianCalendar(2020,5,12,5,30,10).getTime();
-        vecritureComptable = new EcritureComptable();
-        vecritureComptable.setLibelle("libellé");
-        vecritureComptable.setReference("AC-2020/00001");
-        vecritureComptable.setJournal(new JournalComptable("AC" , "Achat"));
-        vecritureComptable.setDate(date2019);
-        vecritureComptable.getListLigneEcriture().add(new LigneEcritureComptable(new CompteComptable(1),
-                null, new BigDecimal(123),
-                null));
-        vecritureComptable.getListLigneEcriture().add(new LigneEcritureComptable(new CompteComptable(2),
-                null, null,
-                new BigDecimal(123)));
-
         manager.checkEcritureComptable(vecritureComptable);
     }
 
@@ -92,5 +95,24 @@ public class ComptabiliteManagerImplIntegrationTest extends BusinessTestCase{
         assertFalse(manager.getListEcritureComptable().isEmpty());
     }
 
+    @Test
+    public void insertEcriturecomptable() throws FunctionalException, NotFoundException {
+        manager.insertEcritureComptable(vecritureComptable);
+        assertNotNull(getDaoProxy().getComptabiliteDao().getEcritureComptableByRef("AC-2020/00001"));
+    }
 
+    @Test
+    public void updateEcriturecomptable() throws FunctionalException, NotFoundException {
+        EcritureComptable toUpdate =getDaoProxy().getComptabiliteDao().getEcritureComptableByRef("AC-2020/00001");
+        toUpdate.setLibelle("updated");
+        manager.updateEcritureComptable(toUpdate);
+        assertEquals( "updated", getDaoProxy().getComptabiliteDao().getEcritureComptableByRef("AC-2020/00001").getLibelle() );
+    }
+
+    @Test(expected = NotFoundException.class)
+    public void deleteEcritureComptable() throws NotFoundException {
+
+        manager.deleteEcritureComptable(1);
+        getDaoProxy().getComptabiliteDao().getEcritureComptable(1);
+    }
 }
