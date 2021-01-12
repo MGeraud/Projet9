@@ -12,7 +12,7 @@ import java.math.BigDecimal;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
-public class ComptabiliteManagerImplIT extends BusinessTestCase{
+public class ComptabiliteManagerImplIntegrationTest extends BusinessTestCase{
 
     private ComptabiliteManagerImpl manager = new ComptabiliteManagerImpl();
     private EcritureComptable ecritureComptable;
