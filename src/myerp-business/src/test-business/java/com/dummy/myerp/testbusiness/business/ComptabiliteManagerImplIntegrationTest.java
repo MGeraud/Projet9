@@ -12,6 +12,8 @@ import java.math.BigDecimal;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
+import static org.junit.Assert.assertFalse;
+
 public class ComptabiliteManagerImplIntegrationTest extends BusinessTestCase{
 
     private ComptabiliteManagerImpl manager = new ComptabiliteManagerImpl();
@@ -74,4 +76,21 @@ public class ComptabiliteManagerImplIntegrationTest extends BusinessTestCase{
 
         manager.checkEcritureComptable(vecritureComptable);
     }
+
+    @Test
+    public void getListCompteComptable(){
+        assertFalse(manager.getListCompteComptable().isEmpty());
+    }
+
+    @Test
+    public void getListJournalComptable(){
+        assertFalse(manager.getListJournalComptable().isEmpty());
+    }
+
+    @Test
+    public void getListEcritureComptable(){
+        assertFalse(manager.getListEcritureComptable().isEmpty());
+    }
+
+
 }
