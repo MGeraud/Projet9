@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4d5eb26-7762-4fc5-a8a5-398e157e0414" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/myerp-business/src/test-business/java/com/dummy/myerp/testbusiness/business/ComptabiliteManagerImplIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myerp-business/src/test-business/java/com/dummy/myerp/testbusiness/business/ComptabiliteManagerImplIntegrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myerp-consumer/src/main/resources/com/dummy/myerp/consumer/sqlContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/myerp-consumer/src/main/resources/com/dummy/myerp/consumer/sqlContext.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +61,7 @@
       <recent name="com.dummy.myerp.model.bean.comptabilite" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ComptabiliteManagerImplIntegrationTest.deleteEcritureComptable">
+  <component name="RunManager" selected="JUnit.ComptabiliteManagerImplIntegrationTest.checkEcritureComptableContext">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -90,6 +88,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ComptabiliteManagerImplIntegrationTest.checkEcritureComptableContext" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myerp-business" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dummy.myerp.testbusiness.business.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dummy.myerp.testbusiness.business" />
+      <option name="MAIN_CLASS_NAME" value="com.dummy.myerp.testbusiness.business.ComptabiliteManagerImplIntegrationTest" />
+      <option name="METHOD_NAME" value="checkEcritureComptableContext" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ComptabiliteManagerImplIntegrationTest.deleteEcritureComptable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myerp-business" />
       <extension name="coverage">
@@ -101,22 +115,6 @@
       <option name="PACKAGE_NAME" value="com.dummy.myerp.testbusiness.business" />
       <option name="MAIN_CLASS_NAME" value="com.dummy.myerp.testbusiness.business.ComptabiliteManagerImplIntegrationTest" />
       <option name="METHOD_NAME" value="deleteEcritureComptable" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ComptabiliteManagerImplIntegrationTest.getListCompteComptable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="myerp-business" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dummy.myerp.testbusiness.business.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.dummy.myerp.testbusiness.business" />
-      <option name="MAIN_CLASS_NAME" value="com.dummy.myerp.testbusiness.business.ComptabiliteManagerImplIntegrationTest" />
-      <option name="METHOD_NAME" value="getListCompteComptable" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -156,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ComptabiliteManagerImplIntegrationTest.checkEcritureComptableContext" />
         <item itemvalue="JUnit.ComptabiliteManagerImplIntegrationTest.deleteEcritureComptable" />
         <item itemvalue="JUnit.ComptabiliteManagerImplIntegrationTest" />
         <item itemvalue="JUnit.ComptabiliteManagerImplIntegrationTest.updateEcriturecomptable" />
         <item itemvalue="JUnit.ComptabiliteManagerImplIntegrationTest.insertEcriturecomptable" />
-        <item itemvalue="JUnit.ComptabiliteManagerImplIntegrationTest.getListCompteComptable" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +195,7 @@
       <workItem from="1610098027881" duration="7324000" />
       <workItem from="1610122270633" duration="8129000" />
       <workItem from="1610440867211" duration="478000" />
-      <workItem from="1610441361841" duration="9152000" />
+      <workItem from="1610441361841" duration="9658000" />
     </task>
     <task id="LOCAL-00001" summary="add travis config file">
       <created>1608222058758</created>
@@ -402,14 +400,20 @@
       <option name="project" value="LOCAL" />
       <updated>1610461658673</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Add test insert-update-delete ecriture comptable into ComptabiliteManagerImplIntegrationTest , &#10;Refactor sqlContext &quot;,&quot; missing in request">
+      <created>1610464529343</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1610464529343</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor isEquilibree() use compareTo instead of equals" />
     <MESSAGE value="Add dependencies to jaxb then it works woith jdk 11" />
     <MESSAGE value="Add script to travis to run test" />
     <MESSAGE value="refactor travis" />
@@ -434,7 +438,8 @@
     <MESSAGE value="Refactor ComptabiliteManagerImplIntegrationTest.java" />
     <MESSAGE value="refactor test checkEcriturecomptable" />
     <MESSAGE value="Add test to get List of compte, ecriture and journal" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add test to get List of compte, ecriture and journal" />
+    <MESSAGE value="Add test insert-update-delete ecriture comptable into ComptabiliteManagerImplIntegrationTest , &#10;Refactor sqlContext &quot;,&quot; missing in request" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add test insert-update-delete ecriture comptable into ComptabiliteManagerImplIntegrationTest , &#10;Refactor sqlContext &quot;,&quot; missing in request" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
