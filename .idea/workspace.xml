@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4d5eb26-7762-4fc5-a8a5-398e157e0414" name="Default Changelist" comment="">
+    <list default="true" id="e4d5eb26-7762-4fc5-a8a5-398e157e0414" name="Default Changelist" comment="Add addreference test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/myerp-business/src/test-business/java/com/dummy/myerp/testbusiness/business/ComptabiliteManagerImplIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myerp-business/src/test-business/java/com/dummy/myerp/testbusiness/business/ComptabiliteManagerImplIntegrationTest.java" afterDir="false" />
     </list>
@@ -16,9 +16,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit4 Test Class" />
         <option value="spring-beans.schema" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -58,22 +58,11 @@
       <recent name="$PROJECT_DIR$/src/myerp-business/src/test-business/resources/com/dummy/myerp/testbusiness" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.dummy.myerp.consumer.dao.impl.db.dao" />
       <recent name="com.dummy.myerp.model.bean.comptabilite" />
+      <recent name="com.dummy.myerp.consumer.dao.impl.db.dao" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ComptabiliteManagerImplIntegrationTest.addReferenceWithNotKnownAnnee">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.LigneEcritureComptableTest.createLigneEcritureComptableWithMoreThan2Decimals">
     <configuration name="ComptabiliteManagerImplIntegrationTest.addReference" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myerp-business" />
       <extension name="coverage">
@@ -138,17 +127,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ComptabiliteManagerImplIntegrationTest.deleteEcritureComptable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="myerp-business" />
+    <configuration name="LigneEcritureComptableTest.createLigneEcritureComptableWithMoreThan2Decimals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myerp-model" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dummy.myerp.testbusiness.business.*" />
+          <option name="PATTERN" value="com.dummy.myerp.model.bean.comptabilite.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.dummy.myerp.testbusiness.business" />
-      <option name="MAIN_CLASS_NAME" value="com.dummy.myerp.testbusiness.business.ComptabiliteManagerImplIntegrationTest" />
-      <option name="METHOD_NAME" value="deleteEcritureComptable" />
+      <option name="PACKAGE_NAME" value="com.dummy.myerp.model.bean.comptabilite" />
+      <option name="MAIN_CLASS_NAME" value="com.dummy.myerp.model.bean.comptabilite.LigneEcritureComptableTest" />
+      <option name="METHOD_NAME" value="createLigneEcritureComptableWithMoreThan2Decimals" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -156,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LigneEcritureComptableTest.createLigneEcritureComptableWithMoreThan2Decimals" />
         <item itemvalue="JUnit.ComptabiliteManagerImplIntegrationTest.addReferenceWithNotKnownAnnee" />
         <item itemvalue="JUnit.ComptabiliteManagerImplIntegrationTest.addReferenceWithNotKnownannee" />
         <item itemvalue="JUnit.ComptabiliteManagerImplIntegrationTest.addReference" />
         <item itemvalue="JUnit.ComptabiliteManagerImplIntegrationTest.checkEcritureComptableContext" />
-        <item itemvalue="JUnit.ComptabiliteManagerImplIntegrationTest.deleteEcritureComptable" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +186,9 @@
       <workItem from="1610098027881" duration="7324000" />
       <workItem from="1610122270633" duration="8129000" />
       <workItem from="1610440867211" duration="478000" />
-      <workItem from="1610441361841" duration="12152000" />
+      <workItem from="1610441361841" duration="14914000" />
+      <workItem from="1610474207293" duration="615000" />
+      <workItem from="1610556139472" duration="610000" />
     </task>
     <task id="LOCAL-00001" summary="add travis config file">
       <created>1608222058758</created>
@@ -416,14 +407,20 @@
       <option name="project" value="LOCAL" />
       <updated>1610465049013</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Add addreference test">
+      <created>1610467503902</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1610467503902</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add script to travis to run test" />
     <MESSAGE value="refactor travis" />
     <MESSAGE value="refactor travis#3" />
     <MESSAGE value="Add jacoco api to check test coverage" />
@@ -448,7 +445,8 @@
     <MESSAGE value="Add test to get List of compte, ecriture and journal" />
     <MESSAGE value="Add test insert-update-delete ecriture comptable into ComptabiliteManagerImplIntegrationTest , &#10;Refactor sqlContext &quot;,&quot; missing in request" />
     <MESSAGE value="Refactor checkEcritureComptable test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor checkEcritureComptable test" />
+    <MESSAGE value="Add addreference test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add addreference test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

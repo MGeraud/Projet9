@@ -1,3 +1,5 @@
+[![Build Status](https://www.travis-ci.com/MGeraud/Projet9.svg?branch=master)](https://www.travis-ci.com/MGeraud/Projet9)   [![codecov](https://codecov.io/gh/MGeraud/Projet9/branch/master/graph/badge.svg?token=BKDTAYC4XK)](https://codecov.io/gh/MGeraud/Projet9)
+
 # MyERP
 
 ## Organisation du répertoire
